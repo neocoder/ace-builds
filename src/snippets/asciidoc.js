@@ -1,7 +1,7 @@
-define("ace/snippets/asciidoc",["require","exports","module"], function(require, exports, module) {
+define("ace/snippets/asciidoc",["require","exports","module","ace/requirejs/text!ace/snippets/asciidoc.snippets"], function(require, exports, module) {
 "use strict";
 
-exports.snippetText =undefined;
+exports.snippetText = require("../requirejs/text!./asciidoc.snippets");
 exports.scope = "asciidoc";
 
 });

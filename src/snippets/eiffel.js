@@ -1,7 +1,7 @@
-define("ace/snippets/eiffel",["require","exports","module"], function(require, exports, module) {
+define("ace/snippets/eiffel",["require","exports","module","ace/requirejs/text!ace/snippets/eiffel.snippets"], function(require, exports, module) {
 "use strict";
 
-exports.snippetText =undefined;
+exports.snippetText = require("../requirejs/text!./eiffel.snippets");
 exports.scope = "eiffel";
 
 });

@@ -1,7 +1,7 @@
-define("ace/snippets/curly",["require","exports","module"], function(require, exports, module) {
+define("ace/snippets/curly",["require","exports","module","ace/requirejs/text!ace/snippets/curly.snippets"], function(require, exports, module) {
 "use strict";
 
-exports.snippetText =undefined;
+exports.snippetText = require("../requirejs/text!./curly.snippets");
 exports.scope = "curly";
 
 });

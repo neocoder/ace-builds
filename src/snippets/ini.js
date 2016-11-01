@@ -1,7 +1,7 @@
-define("ace/snippets/ini",["require","exports","module"], function(require, exports, module) {
+define("ace/snippets/ini",["require","exports","module","ace/requirejs/text!ace/snippets/ini.snippets"], function(require, exports, module) {
 "use strict";
 
-exports.snippetText =undefined;
+exports.snippetText = require("../requirejs/text!./ini.snippets");
 exports.scope = "ini";
 
 });

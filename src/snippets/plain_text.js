@@ -1,7 +1,7 @@
-define("ace/snippets/plain_text",["require","exports","module"], function(require, exports, module) {
+define("ace/snippets/plain_text",["require","exports","module","ace/requirejs/text!ace/snippets/plain_text.snippets"], function(require, exports, module) {
 "use strict";
 
-exports.snippetText =undefined;
+exports.snippetText = require("../requirejs/text!./plain_text.snippets");
 exports.scope = "plain_text";
 
 });

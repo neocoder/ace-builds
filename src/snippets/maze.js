@@ -1,16 +1,9 @@
-define("ace/snippets/maze",["require","exports","module"], function(require, exports, module) {
+define("ace/requirejs/text!ace/snippets/maze.snippets",[],"snippet >\ndescription assignment\nscope maze\n	-> ${1}= ${2}\n\nsnippet >\ndescription if\nscope maze\n	-> IF ${2:**} THEN %${3:L} ELSE %${4:R}\n");
+
+define("ace/snippets/maze",["require","exports","module","ace/requirejs/text!ace/snippets/maze.snippets"], function(require, exports, module) {
 "use strict";
 
-exports.snippetText = "snippet >\n\
-description assignment\n\
-scope maze\n\
-	-> ${1}= ${2}\n\
-\n\
-snippet >\n\
-description if\n\
-scope maze\n\
-	-> IF ${2:**} THEN %${3:L} ELSE %${4:R}\n\
-";
+exports.snippetText = require("../requirejs/text!./maze.snippets");
 exports.scope = "maze";
 
 });

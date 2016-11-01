@@ -1,7 +1,7 @@
-define("ace/snippets/apache_conf",["require","exports","module"], function(require, exports, module) {
+define("ace/snippets/apache_conf",["require","exports","module","ace/requirejs/text!ace/snippets/apache_conf.snippets"], function(require, exports, module) {
 "use strict";
 
-exports.snippetText =undefined;
+exports.snippetText = require("../requirejs/text!./apache_conf.snippets");
 exports.scope = "apache_conf";
 
 });
