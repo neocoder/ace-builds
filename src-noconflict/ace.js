@@ -2283,6 +2283,9 @@ var TextInput = function(parentNode, host) {
         if (e.type == "compositionend" && c.range) {
             host.selection.setRange(c.range);
         }
+        if (useragent.isChrome && useragent.isChrome >= 53) {
+          onInput();
+        }
     };
     
     
