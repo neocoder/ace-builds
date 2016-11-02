@@ -1,7 +1,7 @@
-define("ace/snippets/fortran",["require","exports","module","ace/requirejs/text!ace/snippets/fortran.snippets"], function(require, exports, module) {
+define("ace/snippets/fortran",["require","exports","module"], function(require, exports, module) {
 "use strict";
 
-exports.snippetText = require("../requirejs/text!./fortran.snippets");
+exports.snippetText =undefined;
 exports.scope = "fortran";
 
 });

@@ -1,7 +1,7 @@
-define("ace/snippets/elm",["require","exports","module","ace/requirejs/text!ace/snippets/elm.snippets"], function(require, exports, module) {
+define("ace/snippets/elm",["require","exports","module"], function(require, exports, module) {
 "use strict";
 
-exports.snippetText = require("../requirejs/text!./elm.snippets");
+exports.snippetText =undefined;
 exports.scope = "elm";
 
 });

@@ -1,9 +1,51 @@
-define("ace/requirejs/text!ace/ext/menu_tools/settings_menu.css",[],"#ace_settingsmenu, #kbshortcutmenu {\n    background-color: #F7F7F7;\n    color: black;\n    box-shadow: -5px 4px 5px rgba(126, 126, 126, 0.55);\n    padding: 1em 0.5em 2em 1em;\n    overflow: auto;\n    position: absolute;\n    margin: 0;\n    bottom: 0;\n    right: 0;\n    top: 0;\n    z-index: 9991;\n    cursor: default;\n}\n\n.ace_dark #ace_settingsmenu, .ace_dark #kbshortcutmenu {\n    box-shadow: -20px 10px 25px rgba(126, 126, 126, 0.25);\n    background-color: rgba(255, 255, 255, 0.6);\n    color: black;\n}\n\n.ace_optionsMenuEntry:hover {\n    background-color: rgba(100, 100, 100, 0.1);\n    -webkit-transition: all 0.5s;\n    transition: all 0.3s\n}\n\n.ace_closeButton {\n    background: rgba(245, 146, 146, 0.5);\n    border: 1px solid #F48A8A;\n    border-radius: 50%;\n    padding: 7px;\n    position: absolute;\n    right: -8px;\n    top: -8px;\n    z-index: 1000;\n}\n.ace_closeButton{\n    background: rgba(245, 146, 146, 0.9);\n}\n.ace_optionsMenuKey {\n    color: darkslateblue;\n    font-weight: bold;\n}\n.ace_optionsMenuCommand {\n    color: darkcyan;\n    font-weight: normal;\n}");
-
-define("ace/ext/menu_tools/overlay_page",["require","exports","module","ace/lib/dom","ace/requirejs/text!ace/ext/menu_tools/settings_menu.css"], function(require, exports, module) {
+define("ace/ext/menu_tools/overlay_page",["require","exports","module","ace/lib/dom"], function(require, exports, module) {
 'use strict';
 var dom = require("../../lib/dom");
-var cssText = require("../../requirejs/text!./settings_menu.css");
+var cssText = "#ace_settingsmenu, #kbshortcutmenu {\
+background-color: #F7F7F7;\
+color: black;\
+box-shadow: -5px 4px 5px rgba(126, 126, 126, 0.55);\
+padding: 1em 0.5em 2em 1em;\
+overflow: auto;\
+position: absolute;\
+margin: 0;\
+bottom: 0;\
+right: 0;\
+top: 0;\
+z-index: 9991;\
+cursor: default;\
+}\
+.ace_dark #ace_settingsmenu, .ace_dark #kbshortcutmenu {\
+box-shadow: -20px 10px 25px rgba(126, 126, 126, 0.25);\
+background-color: rgba(255, 255, 255, 0.6);\
+color: black;\
+}\
+.ace_optionsMenuEntry:hover {\
+background-color: rgba(100, 100, 100, 0.1);\
+-webkit-transition: all 0.5s;\
+transition: all 0.3s\
+}\
+.ace_closeButton {\
+background: rgba(245, 146, 146, 0.5);\
+border: 1px solid #F48A8A;\
+border-radius: 50%;\
+padding: 7px;\
+position: absolute;\
+right: -8px;\
+top: -8px;\
+z-index: 1000;\
+}\
+.ace_closeButton{\
+background: rgba(245, 146, 146, 0.9);\
+}\
+.ace_optionsMenuKey {\
+color: darkslateblue;\
+font-weight: bold;\
+}\
+.ace_optionsMenuCommand {\
+color: darkcyan;\
+font-weight: normal;\
+}";
 dom.importCssString(cssText);
 module.exports.overlayPage = function overlayPage(editor, contentElement, top, right, bottom, left) {
     top = top ? 'top: ' + top + ';' : '';

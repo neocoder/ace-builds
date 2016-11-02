@@ -1,7 +1,7 @@
-define("ace/snippets/verilog",["require","exports","module","ace/requirejs/text!ace/snippets/verilog.snippets"], function(require, exports, module) {
+define("ace/snippets/verilog",["require","exports","module"], function(require, exports, module) {
 "use strict";
 
-exports.snippetText = require("../requirejs/text!./verilog.snippets");
+exports.snippetText =undefined;
 exports.scope = "verilog";
 
 });

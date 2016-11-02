@@ -1,9 +1,16 @@
-define("ace/requirejs/text!ace/snippets/snippets.snippets",[],"# snippets for making snippets :)\nsnippet snip\n	snippet ${1:trigger}\n		${2}\nsnippet msnip\n	snippet ${1:trigger} ${2:description}\n		${3}\nsnippet v\n	{VISUAL}\n");
-
-define("ace/snippets/snippets",["require","exports","module","ace/requirejs/text!ace/snippets/snippets.snippets"], function(require, exports, module) {
+define("ace/snippets/snippets",["require","exports","module"], function(require, exports, module) {
 "use strict";
 
-exports.snippetText = require("../requirejs/text!./snippets.snippets");
+exports.snippetText = "# snippets for making snippets :)\n\
+snippet snip\n\
+	snippet ${1:trigger}\n\
+		${2}\n\
+snippet msnip\n\
+	snippet ${1:trigger} ${2:description}\n\
+		${3}\n\
+snippet v\n\
+	{VISUAL}\n\
+";
 exports.scope = "snippets";
 
 });
