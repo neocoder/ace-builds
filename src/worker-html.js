@@ -1449,6 +1449,7 @@ var lintOptions = {
 	'indent-width': false,
 	'spec-char-escape':true,
 	'id-no-dup': true,
+	'title-max-len': false,
 	'id-class-style': false,
 	'img-req-alt': 'allownull',
 	'img-req-src': true
