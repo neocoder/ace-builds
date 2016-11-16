@@ -28,7 +28,9 @@ background: rgb(102, 82, 0)\
 }\
 .ace-monokai .ace_marker-layer .ace_bracket {\
 margin: -1px 0 0 -1px;\
-border: 1px solid #49483E\
+border: none;\
+border-bottom: 1px solid rgb(58, 101, 255);\
+border-radius: 0;\
 }\
 .ace-monokai .ace_marker-layer .ace_active-line {\
 background: #202020\
@@ -98,7 +100,8 @@ color: #75715E\
 }\
 .ace-monokai .ace_indent-guide {\
 background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ0FD0ZXBzd/wPAAjVAoxeSgNeAAAAAElFTkSuQmCC) right repeat-y\
-}";
+}\
+";
 
 var dom = require("../lib/dom");
 dom.importCssString(exports.cssText, exports.cssClass);

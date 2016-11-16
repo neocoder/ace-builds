@@ -92,7 +92,9 @@ background: rgb(164, 229, 101);\
 }\
 .ace-chrome .ace_marker-layer .ace_bracket {\
 margin: -1px 0 0 -1px;\
-border: 1px solid rgb(192, 192, 192);\
+border: none;\
+border-bottom: 2px solid rgb(88, 72, 246);\
+border-radius: 0;\
 }\
 .ace-chrome .ace_marker-layer .ace_active-line {\
 background: rgba(0, 0, 0, 0.07);\
